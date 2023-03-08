@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen.Views.PageData">
+    <ContentPage.Content>
+        <StackLayout>
+           
+            <Entry x:Name="txtnombres" 
+                   Placeholder="Nombres" 
+                   Keyboard="Text"
+                   TextColor="Red"
+                   Margin="10,10,10,0"/>
+
+            <Entry x:Name="txtapellidos" Placeholder="apellidos" Keyboard="Text" 
+                   Margin="10,10,10,0"/>
+
+            <Entry x:Name="txtedad" Placeholder="Edad" Keyboard="Numeric" 
+                   Margin="10,10,10,0"/>
+
+            <Picker Title="PAIS" TitleColor="Blue" Margin="10,10,10,0" x:Name="cbpais">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Honduras</x:String>
+                        <x:String>Estados Unidos</x:String>
+                        <x:String>Mexico</x:String>
+                        <x:String>Brasil</x:String>
+                        <x:String>Colombia</x:String>
+                        <x:String>Ecuador</x:String>
+                        <x:String>Argentina</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Entry x:Name="txtnota" Placeholder="Nota" Keyboard="Text" 
+                   Margin="10,10,10,0"/>
+
+     
+
+            <Entry x:Name="txtlatitud" Placeholder="latitud" Keyboard="Text" 
+                   Margin="10,10,10,0" IsEnabled="false"/>
+
+            <Entry x:Name="txtlongitud" Placeholder="longitud" Keyboard="Text" 
+                   Margin="10,10,10,0" IsEnabled="false"/>
+
+            <Button x:Name="btnagregar" Text="Guardar" Clicked="btnagregar_Clicked"                  
+                    Margin="10,10,10,0"
+                    BackgroundColor="Cyan"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
